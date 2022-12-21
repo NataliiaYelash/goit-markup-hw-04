@@ -62,20 +62,6 @@ body{
 
 
 /*Site nav*/
-.item{
-    align-items: center;
-    
-}
-.envelope,.smartphone{
-    margin-right: 10px; 
-    fill: #757575;
-    
-} 
-.envelope-item,
-.icon-smartphone{
-    display: flex;
-    
-}
 
 .nav-header{
     display: flex;
@@ -119,6 +105,8 @@ body{
 .connect-nav{
     display: flex;
     margin-left: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .connect-nav .link{
@@ -134,16 +122,23 @@ body{
     padding-bottom: 32px;
 
 }
-.connect-nav .link:hover,
-.connect-nav .link:focus{
+
+
+.link:hover,
+.link:focus
+{ 
     color: var(--accent-color);
 }
 
-.envelope:hover,.smartphone:hover,
-.envelope:focus,.smartphone:focus{
-    fill: var(--accent-color);
+.header-contact-icon{
+    fill:var(--primary-text-color);
+    margin-right: 10px;
 }
 
+.header-contact-icon:hover,
+.header-contact-icon:focus{
+    fill: currentColor;
+}
 
 
 /*Hero*/
@@ -152,6 +147,7 @@ body{
     
     text-align: center;
     margin-bottom: 0;
+    padding: 200px 0;
 }
 
 h1 {
@@ -166,7 +162,8 @@ h1 {
     width: 696px;
 
     margin: auto;
-    padding: 200px 0;
+    margin-bottom: 30px;
+    padding: 0;
     
 }
 
@@ -295,6 +292,7 @@ h1 {
 .img-photo{
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: var(--primary-white-color);
 }
 
 /* Векторні зображеня другої секції */
@@ -341,18 +339,15 @@ h1 {
     letter-spacing: 0.03em;
     
     margin: 0 0 0 0;
-    /* padding-bottom: 30px; */
 
 }
 
 .content{
     padding-top: 30px;
     padding-bottom: 16px;
+    
 }
 
-.socials-team{
-
-}
 
 .socials-link-team{
     fill:#AFB1B8;  
@@ -367,7 +362,7 @@ h1 {
 .socials-list-team{
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 10px;
     padding:0 0 30px 0;
     justify-content: center;
     
@@ -480,10 +475,9 @@ margin-top: 12px;
 .socials-list{
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 10px;
     padding: 0;
-    
-   
+       
 }
 
 .socials-item{
